@@ -1,0 +1,474 @@
+
+body {
+    background-color: #c8e0fb;
+}
+
+
+.continer_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+
+#jD {
+  font-size: 14px;
+}
+
+.form_backround {
+    width: 374px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 55px;
+}
+
+
+
+
+.front {
+    position: absolute;
+    top: 75px;
+    width: 250px;
+    height: 160px;
+    background-size: cover;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transition: transform .4s ease-out;
+    backface-visibility: hidden;
+    transform:perspective(1000px) rotateY(0);
+}
+
+
+.back {
+    position: absolute;
+    top: 75px;
+    width: 250px;
+    height: 160px;
+    background-size: cover;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+
+}
+
+.back .stripe {
+    background-color: black;
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+}
+
+.back .box {
+    padding: 0 20px;
+}
+
+.back .box  span {
+    color: black
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.back .box .cvv_box {
+    height: 10px;
+    padding: 10px 10px 10px 0px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.expiration_box {
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+
+.expiration_mm_show .expiration_yy_show {
+    display: inline-block;
+    width: 20px;
+}
+
+.cart_holder_box {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    width: 160px;
+}
+
+#credit_cart_name {
+  font-size: 14px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+#inputs {
+    display: flex;
+    margin-top: 120px;
+}
+
+
+#cart_n {
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration_label {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper_expiration_mont{
+    width: 237px;
+}
+
+.conteiner_for_expiration {
+    margin-top: 20px;
+}
+
+.expiration_select {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-size: 12px;
+}
+
+
+select {
+    width: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid rgb(99, 62, 233);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+                0 4px 4px rgba(0,0,0,0.11), 
+                0 6px 8px rgba(0,0,0,0.11),
+                0 8px 16px rgba(0,0,0,0.11);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(99, 62, 233);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+}
+
+
+.input_castom {
+    padding: 10px 5px 10px 10px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 2s ease;
+}
+
+.container_for_cvv {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+
+
+.margin_top_17 {
+    margin-top: 17px;
+}
+
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(161 150 233);
+    width: 300px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+  box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+
+
+#credit_cart_number {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#credit_cart_number_content {
+    font-size: 17px;
+    height: 25px;
+    width: 211px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+
+.rotated {
+    display: block;
+    animation: myAnim 0.2s ease 0s 1 normal forwards;
+  }
+
+
+  
+  .rotated1 {
+    display: block;
+    animation: myAnim_rot 0.2s ease 0s 1 normal forwards;
+  }
+
+
+  @keyframes myAnim {
+    0% {
+        opacity: 0.1;
+      animation-timing-function: ease-in;
+      transform: translateY(-20px);
+    }
+    25% {
+      opacity: 0.2;
+      animation-timing-function: ease-in;
+      transform: translateY(-15px);
+    }
+    50% {
+        opacity: 0.1;
+      animation-timing-function: ease-in;
+      transform: translateY(-10px);
+    }
+    75% {
+      opacity: 0.4;
+      animation-timing-function: ease-in;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes myAnim_rot {
+    0% {
+        opacity: 0.1;
+      animation-timing-function: ease-in;
+      transform: translateY(20px);
+    }
+    25% {
+      opacity: 0.2;
+      animation-timing-function: ease-in;
+      transform: translateY(15px);
+    }
+    50% {
+        opacity: 0.3;
+      animation-timing-function: ease-in;
+      transform: translateY(10px);
+    }
+    75% {
+      opacity: 0.4;
+      animation-timing-function: ease-in;
+      transform: translateY(5px);
+    }
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  }
+
+
+
+  .animation_for_cart_holder {
+    display: inline-block;
+    animation: cart_holder_add 0.2s ease 0s 1 normal forwards;
+    width: fit-content;
+  }
+
+
+  .animation_for_cart_holder_delete {
+    display: inline-block;
+    animation: cart_holder_add_delete 0.2s ease 0s 1 normal forwards;
+  }
+
+  @keyframes cart_holder_add {
+    0%{
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        opacity: 0;
+      }
+    0%{
+      transform: rotate(25deg);
+      transform-origin: 100% 100%;
+      opacity: 0.1;
+      }
+    100%{
+      transform: rotate(0);
+      transform-origin: 100% 100%;
+      opacity: 1;
+      }
+  }
+
+  @keyframes cart_holder_add_delete {
+    0%{
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      opacity: 0;
+    }
+    100%{
+      transform: rotate(0);
+      transform-origin: 0 100%;
+      opacity: 1;
+    }
+  }
+
+
+  .img {
+      width: 50px;
+  }
+
+.holder_exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 13px;
+    padding: 5px;
+}
+
+
+
+.border {
+    border: 1px solid white!important;
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+    
+}
+
+
+#cart_type {
+    width: 50px;
+    height: 40px;
+    background-size: cover;
+    background-image: url(img/visa.png);
+}
+
+#cart_chip{
+  width: 50px;
+  height: 40px;
+  background-size: cover;
+  background-image: url(img/chip.png);
+}
+
+#back_cart_type {
+    width: 50px;
+    height: 40px;
+    background-size: cover;
+    background-image: url(img/visa.png);
+    float: right;
+    margin: 0 auto;
+    margin-right: 5px;
+}
+
+
+#cart_type_chip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+
+.cart_type_animation {
+  animation: cart_type_animation 1s ease 0s 1 normal none;
+  overflow: hidden;
+}
+
+@keyframes cart_type_animation {
+  0%{
+    transform: scale(.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+  .expiration_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expiration_mm_yy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.expiration_yy_show {
+  width: 25px;
+}
+
+  .animation_for_expiration {
+    animation: slide_bottom 0.3s ease 0s 1 normal none;
+  }
+
+  @keyframes slide_bottom {
+    0%{
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    50%{
+      opacity: 0.3;
+      transform: translateY(5px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+
+
+
+  .animatioanNone {
+    animation: none!important;
+  }

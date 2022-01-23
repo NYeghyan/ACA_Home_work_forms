@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="continer_main">
+        <div id="credit_cart" class="front">
+            <div id="cart_type_chip">
+                <div id="cart_chip"></div>
+                <div id="cart_type"></div>
+            </div>
+            <div id="credit_cart_number"> 
+                <div id="credit_cart_number_content" class="cart_number_box" > 
+                    <span id="span1">#</span>
+                    <span id="span2">#</span>
+                    <span id="span3">#</span>
+                    <span id="span4">#</span>
+                    <span>&nbsp;&nbsp;</span>
+                    <span id="span5">#</span>
+                    <span id="span6">#</span>
+                    <span id="span7">#</span>
+                    <span id="span8">#</span>
+                    <span>&nbsp;&nbsp;</span>
+                    <span id="span9">#</span>
+                    <span id="span10">#</span>
+                    <span id="span11">#</span>
+                    <span id="span12">#</span>
+                    <span>&nbsp;&nbsp;</span>
+                    <span id="span13">#</span>
+                    <span id="span14">#</span>
+                    <span id="span15">#</span>
+                    <span id="span16">#</span>
+                    <span>&nbsp;&nbsp;</span>
+                </div>
+             </div>
+            <div class="holder_exp" >
+                <div class="cart_holder_box">
+                    <span>Cart Holder</span>
+                    <div>
+                        <span id="jD">Jone Doa</span>
+                    </div>
+                    <div id="credit_cart_name">
+                       
+                    </div>
+                </div>
+                <div class="expiration_box">
+                    <div>Expiration</div>
+                    <div class="expiration_mm_yy" >
+                        <span class="expiration_mm_show">MM</span>
+                        <span class="expiration_divider">/</span>
+                        <span class="expiration_yy_show">YY</span>
+                    </div>
+ 
+                </div>
+            </div>
+  
+        </div>
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv_box">789</div>
+            </div>
+            <div id="back_cart_type"></div>
+        </div>
+        <div class="form_backround">
+        <div id="inputs">
+            <form action="" id="my_form">
+                <div id="cart_n">
+                    <label for="cart_number">Cart Number</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" name="cart_number" id="cart_number_input" class="input_castom" required autocomplete="off" placeholder="Numbers Only">
+                    <label for="cart_number" class="margin_top_17">Cart Name</label>
+                    <input type="text" name="cart_name" id="cart_name_input" class="input_castom"  autocomplete="off" required>
+                </div>
+                <div class="conteiner_for_expiration">
+                    <div class="expiration_label">
+                        <div class="wrapper_expiration_mont">
+                            <label for="expiration_mont"  autocomplete="off">Expiration Date</label>
+                        </div>
+                        
+                        <div>
+                            <label for="cvv_code" autocomplete="off">CVV</label>
+                        </div>
+                        
+                    </div>
+                    <div class="expiration_select">
+                        <div>
+                            <select id="expiration_mm_set" name="expiration_mont" class="input_castom">
+                                <option value="99" selected disabled>Mount</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>    
+                        <div>
+                            <select id="expiration_yy_set" name="expiration_mont" class="input_castom">
+                                <option value="1"  selected disabled>Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+
+                            </select>
+                        </div>
+                        <div class="container_for_cvv">
+                            <input type="number" name="cvv_code" id="cvv_code_input" class="input_castom" pattern="[0-9]" maxlength="4"  >
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="code.js"></script>
+    <script src="https://use.fontawesome.com/a31a3f8384.js"></script>
+</body>
+
+</html>
