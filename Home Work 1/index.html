@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <form action="" id="my_form" name="my_form_name">
+            <ul class="form_list">
+                <li class="valid">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required placeholder="Enter Name"  id="my_input">            
+                </li>
+                <li  class="valid">
+                    <label for="email">Email</label>
+                    <input type="email" name="email"  placeholder="Enter Email" id="emailField" class="my_input" required>                   
+                </li>
+                <li  class="valid">
+                    <label for="phone_number">Phone</label>
+                    <input type="tel" name="phone_number" placeholder="Enter Phone Number"  class="my_input"  pattern="[0-9]+" maxlength="9" required>
+                </li>
+                <li  class="valid">
+                    <label for="image">Photo</label>
+                    <input type="file"  accept="image/png, image/jpeg"  name="image" id="my_image" required class="no_border width_190">
+                </li>
+                <li class="valid"> 
+                    <label for="birthday">Birthday</label>
+                    <input type="datetime-local" name="birthday" required>
+                </li>
+                <li class="valid">
+                    <label for="Gender">Gender</label>
+                    <input type="radio" name="gender" id="gender_m" class="width_25" value="Male" required >
+                    <label for="gender_m"> Male</label>
+                    <input type="radio" name="gender" id="gender_f" class="width_25" value="Female" required >
+                    <label for="gender_f"> Female</label>
+                </li>
+                <li class="valid">
+                    <label for="address">Address</label>
+                    <input type="text" name="address"  minlength="5" required>
+                </li>
+                <li class="valid">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="" required>                   
+                </li>
+                <li class="valid">
+                    <label for="state">State / Province</label>
+                    <input type="text" name="state" id="" required>                     
+                </li>
+                <li class="valid">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="" required>                    
+                </li>
+                <li class="mar_t_15">
+                    <button type="submit" value="submit" id="submit" class="btn">Submit</button>
+                    
+                    
+                </li>
+            </ul>
+
+        </form>
+        <div class="button_div">
+            <button id="show_my_img_btn" class="btn display_none">Show image</button>
+        </div>
+        
+    </div>
+    <div id="show_img_div">
+        <div class="show_img_heder">
+            <button id="close_img_div_btn" class="close_button"><i class="fa fa-times"></i></button>
+        </div>
+    </div>
+    <div id="opacity"></div>
+    
+
+    <script src="code.js"></script>
+    <script src="https://use.fontawesome.com/a31a3f8384.js"></script>
+
+
+
+</body>
+
+</html>
