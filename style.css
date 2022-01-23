@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 650px;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 500px;
+    flex-flow: row wrap;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0px 15px;
+    width: 100px!important;
+    transition: 1s;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    border: none;
+    background-color: rgb(202, 163, 238);
+}
+
+.wrapper a:hover {
+    background-color: rgb(242 235 249);
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
